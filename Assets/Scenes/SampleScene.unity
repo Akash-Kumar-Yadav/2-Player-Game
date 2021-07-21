@@ -1337,63 +1337,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6201913, y: 2.4305942}
   m_EdgeRadius: 0
---- !u!1 &859405530 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
-    type: 3}
-  m_PrefabInstance: {fileID: 1327749690}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &859405531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859405530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3023629ead080fe42b27829556023ed0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &859405532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859405530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e086976f34f0fe4439820e801b1d40f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankJoystick: {fileID: 34569683}
---- !u!114 &859405533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859405530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bfa18dca4b145f4a9660ad7aae66d60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
---- !u!114 &859405534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859405530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe4fb49ab214fd4a903e84f3a160caf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnSpeed: 10
 --- !u!1 &934220157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1618,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 939923309}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1320126183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230,
+    type: 3}
+  m_PrefabInstance: {fileID: 2117984615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1327749690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1682,6 +1637,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 859405532, guid: c9faebc3ff9f5a9408c7246ea440f804, type: 3}
+      propertyPath: tankJoystick
+      value: 
+      objectReference: {fileID: 34569683}
+    - target: {fileID: 859405532, guid: c9faebc3ff9f5a9408c7246ea440f804, type: 3}
+      propertyPath: turrentJoystick
+      value: 
+      objectReference: {fileID: 1320126183}
     - target: {fileID: 2204689433608981393, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
       propertyPath: m_RootOrder
@@ -1742,115 +1705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallTankA
       objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
+    - target: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
-      propertyPath: m_Parameters.colorGradient.atime0
-      value: 964
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.atime1
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053414774338530525, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.m_NumAlphaKeys
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.atime0
-      value: 964
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.atime1
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.23529413
-      objectReference: {fileID: 0}
-    - target: {fileID: 3263349492041577985, guid: c9faebc3ff9f5a9408c7246ea440f804,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.m_NumAlphaKeys
-      value: 2
+      propertyPath: m_TagString
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9faebc3ff9f5a9408c7246ea440f804, type: 3}

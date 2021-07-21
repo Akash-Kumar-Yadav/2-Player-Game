@@ -92,8 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2204689432087332002}
   - component: {fileID: 2204689432087332005}
+  - component: {fileID: 467624615}
   m_Layer: 0
-  m_Name: Hull
+  m_Name: Turrent Hull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,6 +166,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &467624615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204689432087332003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7bd923e33d1054d81c1c4e63d77968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2204689432188150174
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +438,10 @@ GameObject:
   - component: {fileID: 1934152852}
   - component: {fileID: 1934152851}
   - component: {fileID: 859405534}
+  - component: {fileID: 859405531}
+  - component: {fileID: 859405532}
+  - component: {fileID: 859405533}
+  - component: {fileID: 4104703241449476137}
   m_Layer: 0
   m_Name: SmallTankA
   m_TagString: Untagged
@@ -511,6 +528,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f01a221b67eac5418fbab3fe794b989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &859405531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204689433608981422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023629ead080fe42b27829556023ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &859405532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204689433608981422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e086976f34f0fe4439820e801b1d40f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankJoystick: {fileID: 0}
+  turrentJoystick: {fileID: 0}
+--- !u!114 &859405533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204689433608981422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfa18dca4b145f4a9660ad7aae66d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+--- !u!114 &4104703241449476137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204689433608981422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe4fb49ab214fd4a903e84f3a160caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 10
 --- !u!1 &2204689433806106634
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,8 +846,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5377358, g: 0.5377358, b: 0.109069064, a: 1}
-      key1: {r: 0.78848934, g: 0.8113208, b: 0.14159843, a: 0.7921569}
+      key0: {r: 0.23529413, g: 0.23529413, b: 0.23529413, a: 1}
+      key1: {r: 0.23529413, g: 0.23529413, b: 0.23529413, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -793,8 +862,8 @@ TrailRenderer:
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
-      atime1: 30069
+      atime0: 964
+      atime1: 65535
       atime2: 65535
       atime3: 0
       atime4: 0
@@ -803,7 +872,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 3
+      m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
@@ -915,8 +984,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5377358, g: 0.5377358, b: 0.109069064, a: 1}
-      key1: {r: 0.78848934, g: 0.8113208, b: 0.14159843, a: 0.7921569}
+      key0: {r: 0.23529413, g: 0.23529413, b: 0.23529413, a: 1}
+      key1: {r: 0.23529413, g: 0.23529413, b: 0.23529413, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -931,8 +1000,8 @@ TrailRenderer:
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
-      atime1: 30069
+      atime0: 964
+      atime1: 65535
       atime2: 65535
       atime3: 0
       atime4: 0
@@ -941,7 +1010,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 3
+      m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0

@@ -4,5 +4,7 @@
     {
         float tankHorizontal { get; }
         float tankVertical { get; }
+        float turrentHorizontal { get; }
+        float turrentVertical { get; }
     }
 }
