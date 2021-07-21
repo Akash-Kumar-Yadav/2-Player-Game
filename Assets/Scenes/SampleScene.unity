@@ -1355,8 +1355,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3023629ead080fe42b27829556023ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 34569683}
+--- !u!114 &859405532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859405530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e086976f34f0fe4439820e801b1d40f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankJoystick: {fileID: 34569683}
+--- !u!114 &859405533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859405530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfa18dca4b145f4a9660ad7aae66d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &859405534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859405530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe4fb49ab214fd4a903e84f3a160caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   turnSpeed: 10
 --- !u!1 &934220157
 GameObject:
