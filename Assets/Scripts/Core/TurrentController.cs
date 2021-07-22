@@ -11,13 +11,11 @@ namespace Scripts.Core
         IInputHandler inputHandler;
 
         Vector2 move;
-        GameObject player;
 
         private void Start()
         {
-            player = GameObject.FindGameObjectWithTag("Player1");
-            inputHandler = player.GetComponent<IInputHandler>();
-            objectRotations = player.GetComponent<IObjectRotations>();
+            inputHandler = GetComponentInParent<IInputHandler>();
+            objectRotations = GetComponentInParent<IObjectRotations>();
         }
         private void Update()
         {

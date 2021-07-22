@@ -28,9 +28,7 @@ namespace Scripts.Weapon
                 var obj = objectPooler.GetPoolObject();
                 obj.transform.position = spawnPoint.position;
                 obj.transform.rotation = spawnPoint.rotation;
-                
-              
-               
+                obj.SetActive(true);
                 fire = Time.time + waitTime;
             }
         }

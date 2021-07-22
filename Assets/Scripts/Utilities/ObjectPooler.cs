@@ -33,7 +33,7 @@ namespace Scripts.Utilities
             {
                 if (!poolObjects[i].activeInHierarchy)
                 {
-                    poolObjects[i].SetActive(true);
+                   
                     return poolObjects[i];
                 }
             }
