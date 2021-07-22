@@ -1225,14 +1225,25 @@ PrefabInstance:
     - target: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
       propertyPath: m_Name
-      value: SmallTankB
+      value: Blue Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7749846264794804068, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
       propertyPath: id
       value: cf6a0be3-acc7-4d4f-9f35-957276d07bc4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c9faebc3ff9f5a9408c7246ea440f804, type: 3}
 --- !u!1 &358176394
 GameObject:
@@ -1540,6 +1551,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &496943465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
+    type: 3}
+  m_PrefabInstance: {fileID: 314291198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +2875,7 @@ GameObject:
   - component: {fileID: 934220159}
   - component: {fileID: 934220158}
   - component: {fileID: 934220162}
+  - component: {fileID: 934220163}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2969,6 +2987,21 @@ MonoBehaviour:
   quitPanel: {fileID: 1140411693}
   gameOverPanel: {fileID: 520314635}
   mainMenuPanel: {fileID: 933933941}
+  winnerText: {fileID: 1354537548}
+  greenPlayer: {fileID: 1374145094}
+  bluePlayer: {fileID: 496943465}
+--- !u!114 &934220163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934220157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6253af62a39304b8d1e06c03a6f155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &939923309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4012,7 +4045,17 @@ PrefabInstance:
     - target: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
       propertyPath: m_Name
-      value: SmallTankA
+      value: Green Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7749846264794804068, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
@@ -4345,6 +4388,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354537546}
   m_CullTransparentMesh: 1
+--- !u!1 &1374145094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2204689433608981422, guid: c9faebc3ff9f5a9408c7246ea440f804,
+    type: 3}
+  m_PrefabInstance: {fileID: 1327749690}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375113716 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3881087803815115468, guid: ec536a7718376554185e4a856d5ae230,

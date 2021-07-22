@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Scripts.Utilities
 {
-    public class Events 
+    public  class Events :MonoBehaviour
     {
         public static Action OnGameover;
     }

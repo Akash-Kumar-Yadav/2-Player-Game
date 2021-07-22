@@ -1,3 +1,4 @@
+using Scripts.Core;
 using Scripts.Utilities;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,6 +15,11 @@ namespace Scripts.UI
         [SerializeField] GameObject quitPanel;
         [SerializeField] GameObject gameOverPanel;
         [SerializeField] GameObject mainMenuPanel;
+
+        [SerializeField] TMP_Text winnerText;
+
+        [SerializeField] GameObject greenPlayer;
+        [SerializeField] GameObject bluePlayer;
 
         private void OnEnable()
         {
@@ -46,6 +52,22 @@ namespace Scripts.UI
         {
             gameOverPanel.SetActive(true);
             gamePanel.SetActive(false);
+
+            int playerOneHealth = greenPlayer.GetComponent<Health>()._Health;
+            int playerTwoHealth = bluePlayer.GetComponent<Health>()._Health;
+
+            if (playerOneHealth > playerTwoHealth)
+            {
+                winnerText.text = greenPlayer.name + " has won by " + playerOneHealth.ToString();
+            }
+            else if (playerOneHealth < playerTwoHealth)
+            {
+                winnerText.text = bluePlayer.name + " has won by " + playerTwoHealth.ToString();
+            }
+            else
+            {
+                winnerText.text = "DRAW";
+            }
         }
         
         public void Restart()

@@ -9,13 +9,9 @@ namespace Scripts.Core
     {
         [SerializeField] TMP_Text score;
         [SerializeField] int health;
-        public bool IsDead { get; private set; }
 
-        
-        private void Start()
-        {
-            IsDead = false;
-        }
+        public int _Health => health;
+
         public void TakeDamage(int damage)
         {
             if (health > 0)
@@ -24,8 +20,6 @@ namespace Scripts.Core
                 score.text = health.ToString();
                 if (health <= 0)
                 {
-                    IsDead = true;
-
                     if (Events.OnGameover != null)
                     {
                         Events.OnGameover.Invoke();
@@ -34,8 +28,6 @@ namespace Scripts.Core
             }
             else
             {
-                IsDead = true;
-
                 if (Events.OnGameover != null)
                 {
                     Events.OnGameover.Invoke();
