@@ -6,5 +6,6 @@
         float tankVertical { get; }
         float turrentHorizontal { get; }
         float turrentVertical { get; }
+        bool canFire { get; }
     }
 }
