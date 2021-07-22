@@ -29,7 +29,6 @@ namespace Scripts.Weapon
         {
             if (collision.gameObject.GetComponent<UniqueID>() && collision.gameObject.GetComponent<UniqueID>().ID != parentObjectID)
             {
-                print("gg");
                 collision.gameObject.GetComponent<IHealth>().TakeDamage(damage);
             }
             rb.Sleep();

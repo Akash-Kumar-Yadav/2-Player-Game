@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿using System;
 using UnityEngine;
 using TMPro;
+using Scripts.Utilities;
 
 namespace Scripts.Core
 {
@@ -10,6 +11,7 @@ namespace Scripts.Core
         [SerializeField] int health;
         public bool IsDead { get; private set; }
 
+        
         private void Start()
         {
             IsDead = false;
@@ -23,11 +25,21 @@ namespace Scripts.Core
                 if (health <= 0)
                 {
                     IsDead = true;
+
+                    if (Events.OnGameover != null)
+                    {
+                        Events.OnGameover.Invoke();
+                    }
                 }
             }
             else
             {
                 IsDead = true;
+
+                if (Events.OnGameover != null)
+                {
+                    Events.OnGameover.Invoke();
+                }
             }
         }
     }
