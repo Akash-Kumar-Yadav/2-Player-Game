@@ -9,7 +9,6 @@ namespace Scripts.Core
 
         IObjectRotations objectRotations;
         IInputHandler inputHandler;
-
         Vector2 move;
 
         private void Start()

@@ -1,4 +1,5 @@
-﻿using Scripts.Locomotion;
+﻿using Scripts.Core;
+using Scripts.Locomotion;
 using Scripts.Utilities;
 using System.Collections;
 using UnityEngine;
@@ -16,10 +17,11 @@ namespace Scripts.Weapon
        
 
         IInputHandler inputHandler;
-
+        UniqueID uniqueID;
         private void Start()
         {
             inputHandler = GetComponent<IInputHandler>();
+            uniqueID = GetComponent<UniqueID>();
         }
         private void Update()
         {
@@ -29,6 +31,10 @@ namespace Scripts.Weapon
                 obj.transform.position = spawnPoint.position;
                 obj.transform.rotation = spawnPoint.rotation;
                 obj.SetActive(true);
+
+                var bullet = obj.GetComponent<Bullet>();
+                bullet.parentObjectID = uniqueID.ID;
+
                 fire = Time.time + waitTime;
             }
         }
