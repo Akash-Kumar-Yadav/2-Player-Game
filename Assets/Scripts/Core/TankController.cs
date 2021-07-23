@@ -1,4 +1,5 @@
 ﻿using Scripts.Locomotion;
+using Scripts.Weapon;
 using UnityEngine;
 
 namespace Scripts.Core
@@ -29,5 +30,6 @@ namespace Scripts.Core
             }
 
         }
+       
     }
 }

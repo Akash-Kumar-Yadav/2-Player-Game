@@ -22,7 +22,7 @@ namespace Scripts.Weapon
             }
            
             rb.WakeUp();
-            rb.AddForce(rb.transform.up * speed ,ForceMode2D.Impulse);
+            rb.AddForce(rb.transform.up * speed*Time.deltaTime ,ForceMode2D.Impulse);
         }
 
         private void OnCollisionEnter2D(Collision2D collision)

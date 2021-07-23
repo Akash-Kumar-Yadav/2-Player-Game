@@ -1229,12 +1229,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
       propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
+      propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7749846264794804068, guid: c9faebc3ff9f5a9408c7246ea440f804,
@@ -4049,8 +4069,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
+        type: 3}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7236373232990506013, guid: c9faebc3ff9f5a9408c7246ea440f804,
         type: 3}
